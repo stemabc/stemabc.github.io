@@ -1,0 +1,400 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+body {
+    line-height: 1
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input, select {
+    vertical-align: middle
+}
+
+li {
+    list-style: none
+}
+
+body {
+    font: normal 75% Arial, Helvetica, sans-serif;
+    background: url("../img/darkbg.jpg") no-repeat #0a0d0f;
+    color: #fff
+}
+
+body, html {
+    height: 100%
+}
+
+#wrapper {
+    padding: 100px 0 60px 100px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100
+}
+
+#wrapper.hide {
+    display: none
+}
+
+#loader {
+    width: 100%;
+    height: 2000px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#loader img {
+    margin-left: 47%;
+    margin-top: 300px
+}
+
+h1 {
+    /*background: url("../img/vincent-garreau.png") no-repeat;*/
+    /*width: 196px;*/
+    height: 25px;
+    font-size: x-large;
+    /*text-indent: -999999px;*/
+    margin-bottom: 33px
+}
+
+h2 {
+    /*background: url("../img/developpeur-front-end.png") no-repeat;*/
+    height: 26px;
+    color: black;
+    /*text-indent: -999999px*/
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.75), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    h1 {
+        /*background: url("../img/vincent-garreau-2x.png") no-repeat;*/
+        background-size: cover
+    }
+
+    h2 {
+        /*background: url("../img/developpeur-front-end-2x.png") no-repeat;*/
+        background-size: 397px
+    }
+}
+
+p {
+    font-family: Arial;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    cursor: default
+}
+
+a, a:visited {
+    color: #fff;
+    text-decoration: none;
+    color: #9f9f9f
+}
+
+body.pcuser p, body.pcuser .courses li:first-child, body.pcuser .subjects_top div span {
+    font-family: Arial !important;
+    font-size: 1em !important;
+    line-height: 1.6em !important
+}
+
+body.loading h2, body.loading p, body.loading ul, body.loading canvas {
+    opacity: 0
+}
+
+body.loading #particles-js canvas {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7)
+}
+
+body h2, body p, body ul {
+    -webkit-transition: opacity .4s ease;
+    transition: opacity .4s ease
+}
+
+.text {
+    max-width: 520px;
+    margin: 30px 0;
+    color: #fff
+}
+
+.tags {
+    margin-bottom: 30px
+}
+
+.tags li {
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    list-style: none;
+    color: #000;
+    display: inline;
+    float: left;
+    margin: 10px 10px 0 0;
+    line-height: 1em;
+    cursor: default
+}
+
+.courses {
+    margin-bottom: 20px
+}
+
+.courses li {
+    margin-bottom: 20px;
+    cursor: default
+}
+
+.courses li:first-child {
+    margin-bottom: .5em;
+    font-family: Arial;
+    font-size: 1.1em
+}
+
+.courses li:first-child:before {
+    display: none
+}
+
+.courses li > a .list-none:before {
+    display: none
+}
+
+.courses li img {
+    vertical-align: middle;
+    margin: -1px 0 0 7px
+}
+
+.courses span {
+    display: block
+}
+
+.footer {
+    clear: left;
+    padding: 30px 0;
+    max-width: 562px
+}
+
+.subjects {
+    height: 73px;
+    margin: 35px 0;
+    overflow: hidden;
+    position: relative
+}
+
+.subjects_top {
+    height: 100%
+}
+
+.subjects_top li {
+    display: inline-block;
+    width: 112px;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    margin-right: 12px
+}
+
+.subjects_top li > div {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    -webkit-transition: top .3s ease;
+    transition: top .3s ease
+}
+
+.subjects_top li > div span {
+    line-height: 1.5em;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    font-family: Arial;
+    font-size: 1.1em
+}
+
+.subjects_top li > img {
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease
+}
+
+.subjects_top li:hover > img {
+    opacity: 0
+}
+
+.subjects_top li:hover > div {
+    top: 8px
+}
+
+.subjects_bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px
+}
+
+.subjects_bottom li {
+    width: 112px;
+    height: 4px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12px
+}
+
+#anim {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    display: none
+}
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+@media only screen and (max-width: 620px) {
+    #wrapper {
+        padding: 30px;
+        text-align: center
+    }
+
+    h1 {
+        margin: 0 auto 30px auto
+    }
+
+    h2 {
+        display: none
+    }
+
+    p, li {
+        font-size: 1.2rem
+    }
+
+    .subjects, .courses li:first-child {
+        display: none
+    }
+
+    .courses a {
+        display: inline-block;
+        padding: 4px 6px
+    }
+}
+
+@media only screen and (min-width: 621px) {
+    body.hover #particles-js canvas {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: .5
+    }
+
+    .courses li {
+        margin-bottom: 3px
+    }
+
+    .courses li > a:first-child:before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background: #fff;
+        vertical-align: middle;
+        margin: -4px 7px 0 0;
+        opacity: .2;
+        -webkit-transition: opacity .2s ease;
+        transition: opacity .2s ease
+    }
+
+    .courses li > a:hover:before {
+        opacity: 1
+    }
+
+    .courses span {
+        display: inline-block;
+        margin-left: 3px
+    }
+
+    .courses span:before {
+        content: "- "
+    }
+}
