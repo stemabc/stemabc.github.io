@@ -17,23 +17,10 @@
       return window.innerWidth > 620 ? n() : $("body").removeClass("loading")
     })
   }), $(window).resize(function () {
-    return $(window).width() <= 620 ? ($("h2").hide(), $("h1 span").hide(), $(".courses li:first-child, .subjects, #anim").hide()) : ($("h2").show(), $("h1 span").show(), $(".courses li:first-child, .subjects, #anim").show()), $(".subjects_top").find("li").on("mouseenter", function (n) {
-      var e;
-      e = $(this).find("a").text(), dataLayer.push({
-        event: "navigation",
-        eventCategory: "Company",
-        eventAction: "Hover",
-        eventLabel: e
-      })
-    }), $("a").on("click", function () {
-      var n, e, t;
-      t = $(this), e = t.text(), n = t.attr("href"), dataLayer.push({
-        event: "navigation",
-        eventCategory: "Links",
-        eventAction: "Click",
-        eventLabel: e,
-        eventValue: n
-      })
-    })
+    return $(window).width() <= 620
+      ?
+      ($("h2").hide(), $("h1 span").hide(), $(".courses li:first-child, .subjects, #anim").hide())
+      :
+      ($("h2").show(), $("h1 span").show(), $(".courses li:first-child, .subjects, #anim").show())
   })
 }).call(this);
